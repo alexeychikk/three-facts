@@ -1,0 +1,19 @@
+{
+  "include": [
+    "./src/**/*"
+  ],
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "target": "es5",
+    "lib": [
+      "es5",
+      "es6"
+    ],
+    "typeRoots": [
+      "node_modules/@types",
+      "../node_modules/@types",
+      "src/types",
+      "src/types/*"
+    ]
+  }
+}

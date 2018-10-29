@@ -1,0 +1,40 @@
+{
+  "name": "three-facts",
+  "version": "1.0.0",
+  "description": "Simple social game to get to know each other",
+  "main": "index.js",
+  "scripts": {
+    "client": "cd client && npm start",
+    "server": "cd server && npm start",
+    "lint-client": "cd client && npm run lint-fix",
+    "lint-server": "cd server && npm run lint-fix",
+    "lint-fix": "concurrently \"npm run lint-server\" \"npm run lint-client\"",
+    "start": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [
+    "social",
+    "game",
+    "three",
+    "facts",
+    "react",
+    "socket",
+    "node"
+  ],
+  "author": "Alexey Zinkevych",
+  "license": "ISC",
+  "repository": "https://github.com/alexeychikk/three-facts.git",
+  "workspaces": [
+    "client",
+    "server",
+    "packages/*"
+  ],
+  "private": true,
+  "devDependencies": {
+    "concurrently": "^4.0.1",
+    "prettier": "^1.14.3",
+    "prettier-tslint": "^0.4.0",
+    "tslint": "^5.11.0",
+    "tslint-config-airbnb": "^5.11.0",
+    "tslint-plugin-prettier": "^2.0.1"
+  }
+}
