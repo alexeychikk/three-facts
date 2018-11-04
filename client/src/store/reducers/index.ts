@@ -1,10 +1,18 @@
-import { combineReducers } from 'redux';
-import { reducer as lobby } from '@modules/Lobby';
+import { combineReducers, Reducer } from 'redux';
+import { lobbyReducer as lobby, LobbyState } from '@modules/Lobby';
 
-export const makeRootReducer = (asyncReducers?) => {
+import { playerReducer as player, PlayerState } from './player';
+
+export type RootState = {
+	lobby: LobbyState;
+	player: PlayerState;
+};
+
+export const makeRootReducer = (asyncReducers?): Reducer<RootState> => {
 	return combineReducers({
 		// my reducers
 		lobby,
+		player,
 		...asyncReducers
 	});
 };

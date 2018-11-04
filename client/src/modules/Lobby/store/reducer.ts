@@ -1,3 +1,4 @@
+import { Reducer } from 'redux';
 import { ActionType } from 'typesafe-actions';
 import * as actions from './actions';
 
@@ -7,7 +8,7 @@ export type LobbyState = {};
 
 const initialState: LobbyState = {};
 
-const lobbyReducer = (
+export const lobbyReducer: Reducer<LobbyState> = (
 	state: LobbyState = initialState,
 	action: LobbyAction
 ): LobbyState => {

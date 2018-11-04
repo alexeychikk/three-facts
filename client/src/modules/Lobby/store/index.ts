@@ -1,1 +1,1 @@
-export { default } from './reducer';
+export { lobbyReducer, LobbyAction, LobbyState } from './reducer';

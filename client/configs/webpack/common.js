@@ -4,13 +4,15 @@ const { CheckerPlugin } = require('awesome-typescript-loader');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const srcDir = resolve(__dirname, '../../src');
+const sharedDir = resolve(srcDir, '../../shared');
 
 module.exports = {
 	resolve: {
 		alias: {
 			'@components': join(srcDir, 'components'),
 			'@modules': join(srcDir, 'modules'),
-			'@store': join(srcDir, 'store')
+			'@store': join(srcDir, 'store'),
+			'@shared': sharedDir
 		},
 		extensions: ['.ts', '.tsx', '.js', '.jsx']
 	},

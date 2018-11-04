@@ -7,10 +7,8 @@
       true,
       "check-space"
     ],
-    "ter-indent": [
-      true,
-      "tab"
-    ],
+    "ter-arrow-parens": false,
+    "ter-indent": false,
     "indent": [
       true,
       "tabs"
@@ -29,10 +27,7 @@
       "single",
       "jsx-double"
     ],
-    "semicolon": [
-      true,
-      "always"
-    ],
+    "semicolon": false,
     "trailing-comma": false,
     "triple-equals": [
       true,
@@ -49,7 +44,8 @@
       "check-operator",
       "check-separator",
       "check-type"
-    ]
+    ],
+    "import-name": false
   },
   "rules": {
     "prettier": true,
@@ -58,10 +54,8 @@
       true,
       "check-space"
     ],
-    "ter-indent": [
-      true,
-      "tab"
-    ],
+    "ter-arrow-parens": false,
+    "ter-indent": false,
     "indent": [
       true,
       "tabs"
@@ -81,10 +75,7 @@
       "single",
       "jsx-double"
     ],
-    "semicolon": [
-      true,
-      "always"
-    ],
+    "semicolon": false,
     "trailing-comma": false,
     "triple-equals": [
       true,
@@ -111,6 +102,7 @@
       "check-operator",
       "check-separator",
       "check-type"
-    ]
+    ],
+    "import-name": false
   }
 }

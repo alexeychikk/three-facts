@@ -16,7 +16,9 @@
       "node_modules/@types",
       "../node_modules/@types",
       "src/types",
-      "src/types/*"
+      "src/types/*",
+      "../shared/types",
+      "../shared/types/*"
     ],
     "baseUrl": "./",
     "paths": {
@@ -25,10 +27,13 @@
       "@modules": ["src/modules"],
       "@modules/*": ["src/modules/*"],
       "@store": ["src/store"],
-      "@store/*": ["src/store/*"]
+      "@store/*": ["src/store/*"],
+      "@shared": ["../shared"],
+      "@shared/*": ["../shared/*"]
     }
   },
   "include": [
-    "./src/**/*"
+    "./src/**/*",
+    "../shared/types/**/*"
   ]
 }

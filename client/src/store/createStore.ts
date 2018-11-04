@@ -1,23 +1,11 @@
 import { applyMiddleware, createStore as createReduxStore } from 'redux';
-import reduxThunk from 'redux-thunk';
 import { composeWithDevTools } from 'redux-devtools-extension';
 
+import enhancers from './enhancers';
+import middleware from './middleware';
 import { makeRootReducer } from './reducers';
 
 export const createStore = (initialState = {}) => {
-	// ======================================================
-	// Middleware Configuration
-	// ======================================================
-	const middleware = [reduxThunk];
-
-	// ======================================================
-	// Store Enhancers
-	// ======================================================
-	const enhancers = [];
-
-	// ======================================================
-	// Store Instantiation and HMR Setup
-	// ======================================================
 	const store = createReduxStore(
 		makeRootReducer(),
 		initialState,

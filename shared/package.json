@@ -1,0 +1,10 @@
+{
+  "name": "three-facts-shared",
+  "version": "1.0.0",
+  "description": "Shared code of the Three Facts game",
+  "author": "Alexey Zinkevych",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "~3.1.5"
+  }
+}

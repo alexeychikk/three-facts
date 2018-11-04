@@ -1,7 +1,7 @@
 {
   "name": "three-facts-server",
   "version": "1.0.0",
-  "description": "Back-end of a simple social game to get to know each other",
+  "description": "Back-end of the Three Facts game",
   "main": "index.js",
   "author": "Alexey Zinkevych",
   "license": "ISC",
@@ -19,6 +19,6 @@
     "@types/socket.io": "~1.4.38",
     "gulp": "~3.9.1",
     "gulp-typescript": "~5.0.0-alpha.3",
-    "typescript": "~3.1.3"
+    "typescript": "~3.1.5"
   }
 }

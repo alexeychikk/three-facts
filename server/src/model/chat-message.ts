@@ -1,7 +1,7 @@
-import { Message, User } from './';
+import { Message, Player } from './';
 
 export class ChatMessage extends Message {
-	constructor(from: User, content: string) {
+	constructor(from: Player, content: string) {
 		super(from, content);
 	}
 }
